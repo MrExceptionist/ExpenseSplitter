@@ -11,7 +11,10 @@ import org.springframework.stereotype.Component;
 public class Info {
 	
 	@Autowired
-	User objUser;
+	private User objUser;
+	
+	@Autowired
+	private ExpenseCalculator objExpenseCalculator;
 
 	
 	public void information() {
@@ -28,13 +31,14 @@ public class Info {
 	
 	System.out.println("Please provide the names of the perons ");
 	for(int i=1;i<=n;i++) {
-		
+		User objUser = new User();
 		System.out.println("Person "+i);
 		String sc = s.next();
 		objUser.setUserName(sc);
 		users.add(objUser);
 	}
 	System.out.println(users);
+	
+	objExpenseCalculator.getExpenses(users);
 	}
-
 }

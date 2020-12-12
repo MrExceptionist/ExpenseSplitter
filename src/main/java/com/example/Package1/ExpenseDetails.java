@@ -1,5 +1,8 @@
 package com.example.Package1;
 
+import org.springframework.stereotype.Component;
+
+@Component
 public class ExpenseDetails {
 	
 	private String expenseName;
