@@ -39,6 +39,6 @@ public class Info {
 	}
 	System.out.println(users);
 	
-	objExpenseCalculator.getExpenses(users);
+	objExpenseCalculator.storeDetails(users);
 	}
 }
