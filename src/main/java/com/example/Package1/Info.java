@@ -25,7 +25,7 @@ public class Info {
 	Scanner s = new Scanner(System.in);
 	int n = s.nextInt();
 	
-	System.out.println(n);
+	
 	
 	List<User> users = new ArrayList<>();
 	
@@ -37,7 +37,7 @@ public class Info {
 		objUser.setUserName(sc);
 		users.add(objUser);
 	}
-	System.out.println(users);
+	
 	
 	objExpenseCalculator.storeDetails(users);
 	}
